@@ -1,12 +1,15 @@
-import './index.css'
+import "./index.css";
 import { createRoot } from "react-dom/client";
+
+import Primeiro from "./components/basicos/Primeiro";
+import ComParametro from "./components/basicos/ComParametro";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-const tag = <strong>Olá React</strong>
 root.render(
-  <div>
-    {tag}
+  <div id="app">
+    <Primeiro></Primeiro>
+    <ComParametro titulo="Situação do Aluno" aluno="Maguin" nota={9.3} />
   </div>
 );

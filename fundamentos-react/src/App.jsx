@@ -2,6 +2,9 @@ import "./App.css";
 
 import Card from "./components/layout/Card";
 
+import Input from "./components/formulario/Input";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import DiretaPai from "./components/comunicacao/DiretaPai";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import TabelasProdutos from "./components/repeticao/TabelasProdutos";
@@ -18,9 +21,21 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#11 - Componente Controlado (input)" color="#E45F56">
+        <Input></Input>
+      </Card>
+
+      <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+        <IndiretaPai></IndiretaPai>
+      </Card>
+
+      <Card titulo="#09 - Comunicação Direta" color="#59323C">
+        <DiretaPai></DiretaPai>
+      </Card>
+
       <Card titulo="#08 - Renderização Condicional" color="#982395">
         <ParOuImpar numero={20}></ParOuImpar>
-        <UsuarioInfo usuario={{nome: 'Fernando'}} />
+        <UsuarioInfo usuario={{ nome: "Fernando" }} />
       </Card>
 
       <Card titulo="#07 - Desafio Repetição" color="#3A3AD9">
